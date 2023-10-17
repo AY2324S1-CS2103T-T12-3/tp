@@ -6,10 +6,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 import seedu.address.model.assignment.Assignment;
-import seedu.address.model.assignment.Name;
 import seedu.address.model.assignment.Date;
-import seedu.address.model.assignment.IsoDate;
 import seedu.address.model.assignment.Description;
+import seedu.address.model.assignment.IsoDate;
+import seedu.address.model.assignment.Name;
 import seedu.address.model.assignment.Status;
 import seedu.address.model.tag.Tag;
 import seedu.address.model.util.SampleDataUtil;

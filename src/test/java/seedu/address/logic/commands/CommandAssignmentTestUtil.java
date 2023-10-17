@@ -2,31 +2,29 @@ package seedu.address.logic.commands;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static seedu.address.logic.parser.assignment.CliSyntax.PREFIX_NAME;
-import static seedu.address.logic.parser.assignment.CliSyntax.PREFIX_STATUS;
-import static seedu.address.logic.parser.assignment.CliSyntax.PREFIX_ENDDATE;
 import static seedu.address.logic.parser.assignment.CliSyntax.PREFIX_DESCRIPTION;
+import static seedu.address.logic.parser.assignment.CliSyntax.PREFIX_ENDDATE;
+import static seedu.address.logic.parser.assignment.CliSyntax.PREFIX_NAME;
 import static seedu.address.logic.parser.assignment.CliSyntax.PREFIX_PLANNEDFINISHDATE;
+import static seedu.address.logic.parser.assignment.CliSyntax.PREFIX_STATUS;
 import static seedu.address.logic.parser.assignment.CliSyntax.PREFIX_TAG;
 import static seedu.address.testutil.Assert.assertThrows;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import seedu.address.commons.core.index.Index;
 import seedu.address.logic.commands.exceptions.CommandException;
-import seedu.address.logic.commands.person.EditCommand;
 import seedu.address.model.AddressBook;
 import seedu.address.model.Model;
 import seedu.address.model.assignment.Assignment;
 import seedu.address.model.assignment.IsoDate;
-import seedu.address.model.person.NameContainsKeywordsPredicate;
-import seedu.address.model.person.Person;
-import seedu.address.testutil.EditPersonDescriptorBuilder;
 
+/**
+ * Contains helper methods for testing commands.
+ */
 public class CommandAssignmentTestUtil {
 
     public static final String VALID_NAME_ASSIGNMENT = "CS2100 Assignment 2";

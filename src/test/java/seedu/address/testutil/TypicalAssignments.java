@@ -1,5 +1,16 @@
 package seedu.address.testutil;
 
+import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_DEADLINE_ASSIGNMENT;
+import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_DESCRIPTION_ASSIGNMENT;
+import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_DESCRIPTION_PROJECT;
+import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_NAME_ASSIGNMENT;
+import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_NAME_PROJECT;
+import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_PLANNED_DATE;
+import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_STATUS_DONE;
+import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_STATUS_UNDONE;
+import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_TAG_ASSIGNMENT;
+import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_TAG_PROJECT;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -10,17 +21,9 @@ import seedu.address.model.AddressBook;
 import seedu.address.model.assignment.Assignment;
 import seedu.address.model.assignment.IsoDate;
 
-import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_NAME_ASSIGNMENT;
-import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_NAME_PROJECT;
-import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_STATUS_UNDONE;
-import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_STATUS_DONE;
-import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_DEADLINE_ASSIGNMENT;
-import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_PLANNED_DATE;
-import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_DESCRIPTION_ASSIGNMENT;
-import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_DESCRIPTION_PROJECT;
-import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_TAG_ASSIGNMENT;
-import static seedu.address.logic.commands.CommandAssignmentTestUtil.VALID_TAG_PROJECT;
-
+/**
+ * A utility class containing a list of {@code Assignment} objects to be used in tests.
+ */
 public class TypicalAssignments {
     private static final LocalDateTime exampleDate1 =
             LocalDateTime.parse("2023-11-29 18:00", DateTimeFormatter.ofPattern(IsoDate.DATE_FORMAT));

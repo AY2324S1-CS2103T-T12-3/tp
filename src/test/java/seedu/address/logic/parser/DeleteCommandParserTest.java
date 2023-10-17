@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 
 import seedu.address.logic.commands.assignment.DeleteAssignmentCommand;
 import seedu.address.logic.parser.assignment.DeleteAssignmentParser;
-import seedu.address.logic.parser.person.DeleteCommandParser;
 
 /**
  * As we are only doing white-box testing, our test cases do not cover path variations
